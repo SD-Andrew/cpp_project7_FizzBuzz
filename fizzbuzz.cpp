@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main () {
+
+  for (int i = 1;i<=100;i++){
+    
+      int D3 = i % 3;
+      int D5 = i % 5;
+      
+      if(D3 == 0 and D5 == 0){
+        std::cout << "FizzBuzz\n";
+      }
+      else if(D3 == 0){
+        std::cout << "Fizz\n";
+      }
+      else if(D5 == 0){
+        std::cout << "Buzz\n";
+      }
+      else {
+        std::cout << i << "\n";
+      }
+  }
+}
